@@ -1,6 +1,6 @@
 import telebot
 
-BOT_TOKEN = "7234251185:AAHHnUp9H1PpxYc4g8DEwKzCmCuma7YtB_Q"
+BOT_TOKEN = ""
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -11,7 +11,7 @@ def welcome_new_members(message):
         welcome_message = (
             f"Добро пожаловать, {first_name}! "
             "Пожалуйста представь себя в разделе "
-            "<a href='https://t.me/c/2559274539/56'>О себе</a>"
+            "<a href='https://t.me/c/2559274539/56'>О себе</a>."
         )
         bot.send_message(message.chat.id, welcome_message, parse_mode="HTML")
 
